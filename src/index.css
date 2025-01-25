@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+.dotted-background {
+  background-color: #ffffff;
+  background-image: radial-gradient(circle, #1f1f1f15 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+  min-height: 100vh; /* Ensures it covers the full viewport height initially */
+  height: auto; /* Adjusts if the content height exceeds the viewport */
+  width: 100%; /* Full width of the viewport */
+}
+
+/* Dark mode support */
+.dark .dotted-background {
+  background-color: #1f1f1f; /* Dark mode background color */
+  background-image: radial-gradient(circle, #ffffff15 1px, transparent 1px);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
