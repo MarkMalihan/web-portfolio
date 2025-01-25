@@ -212,6 +212,28 @@ export const cardData = [
   },
   {
     content: (
+      <div className="flex flex-col justify-between gap-5">
+        <div>
+          <h3 className="text-base sm:text-lg font-semibold mb-2">
+            Bento Layout
+          </h3>
+          <p className="text-xs sm:text-sm text-muted-foreground mb-4 dark:text-gray-400">
+            Figma, UI/UX
+          </p>
+        </div>
+        <Link
+          to="https://www.figma.com/design/j8kTqrvg5zpCPy9CeP4ERo/Bento-Portfolio?node-id=0-1&p=f&t=1XjIdoIFeAcfY0X1-0"
+          target="_blank"
+        >
+          <Button>View Project</Button>
+        </Link>
+      </div>
+    ),
+    filter: "Projects",
+    className: "dark:text-white",
+  },
+  {
+    content: (
       <section className="flex flex-col md:flex-row justify-between items-center">
         <h1 className="text-lg md:text-xl font-semibold mb-4 md:mb-0">
           Contact
