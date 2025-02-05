@@ -2,6 +2,7 @@ import { Button } from "@/component/ui/Button";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { SKILLS } from "./config";
 
 export const cardData = [
   {
@@ -29,28 +30,27 @@ export const cardData = [
       </div>
     ),
     filter: "Argel",
-    className: "col-span-1 md:col-span-4 lg:col-span-3 dark:text-white",
+    className: "col-span-1 md:col-span-4 dark:text-white",
   },
   {
     content: (
-      <div className="">
+      <>
         <h2 className="text-lg sm:text-xl font-semibold mb-4">Skills</h2>
-        <ul className="flex gap-5 flex-wrap text-gray-800 dark:text-gray-300">
-          <li>Vite</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>React</li>
-          <li>Tailwind CSS</li>
-          <li>TypeScript</li>
-          <li>Front-End</li>
-          <li>Git</li>
-          <li>Figma</li>
-          <li>UI/UX</li>
-        </ul>
-      </div>
+        <div className="flex gap-5 flex-wrap text-gray-800 dark:text-gray-300">
+          {SKILLS.map((skill, index) => (
+            <div
+              key={index}
+              className="flex items-center gap-2 text-lg bg-gray-100 dark:bg-black border rounded-full px-3 py-1"
+            >
+              <skill.icon />
+              <p>{skill.name}</p>
+            </div>
+          ))}
+        </div>
+      </>
     ),
     filter: "Skills",
-    className: "col-span-1 md:col-span-4 lg:col-span-1 dark:text-white",
+    className: "col-span-1 md:col-span-4 dark:text-white",
   },
   {
     content: (
@@ -223,6 +223,28 @@ export const cardData = [
         </div>
         <Link
           to="https://www.figma.com/design/j8kTqrvg5zpCPy9CeP4ERo/Bento-Portfolio?node-id=0-1&p=f&t=1XjIdoIFeAcfY0X1-0"
+          target="_blank"
+        >
+          <Button>View Project</Button>
+        </Link>
+      </div>
+    ),
+    filter: "Projects",
+    className: "dark:text-white",
+  },
+  {
+    content: (
+      <div className="flex flex-col justify-between gap-5">
+        <div>
+          <h3 className="text-base sm:text-lg font-semibold mb-2">
+            Property Transfer
+          </h3>
+          <p className="text-xs sm:text-sm text-muted-foreground mb-4 dark:text-gray-400">
+            Figma, UI/UX
+          </p>
+        </div>
+        <Link
+          to="https://www.figma.com/design/zp9lGuf5wNZPVT0gkdk9D7/ptr?node-id=0-1&p=f&t=UZbWvAyXDZpdU0tx-0"
           target="_blank"
         >
           <Button>View Project</Button>
