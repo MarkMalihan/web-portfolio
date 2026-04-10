@@ -56,10 +56,33 @@ export const cardData = [
     content: (
       <div className="space-y-3">
         <h3 className="text-base sm:text-lg font-semibold">
+          Freelance Front-End Developer
+        </h3>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          May 2025 - Present
+        </p>
+        <p className="text-sm mt-1 leading-7 dark:text-gray-300">
+          • Developed and implemented frontend features for a motorcycle insurance web application, collaborating with a team to deliver user-focused interfaces. <br />
+          • Translated UI/UX designs into functional frontend components, following design specifications to ensure consistency and usability across the application. <br />
+          • Integrated frontend components with backend APIs once services were available, ensuring smooth data flow and system reliability. <br />
+          • Provided UI/UX feedback and suggestions during development to improve overall design and user experience. <br />
+          • Contributed to backend development by adding new endpoints, updating existing APIs, and supporting new feature modules when needed. <br />
+          • Documented and maintained test data for third-party integrations, helping external partners validate and verify data exchanges. <br />
+          • Collaborated with cross-functional teams to ensure seamless integration between frontend and backend systems.
+        </p>
+      </div>
+    ),
+    filter: "Experiences",
+    className: "col-span-1 md:col-span-4 lg:col-span-2 text-5xl dark:text-white",
+  },
+  {
+    content: (
+      <div className="space-y-3">
+        <h3 className="text-base sm:text-lg font-semibold">
           Front-End Developer | UI/UX Designer at TSI
         </h3>
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          Oct 2023 - Present
+          Oct 2023 - Apr 2025
         </p>
         <p className="text-sm mt-1 leading-7 dark:text-gray-300">
           • Designed and developed the UI and frontend architecture for the help
@@ -80,7 +103,7 @@ export const cardData = [
       </div>
     ),
     filter: "Experiences",
-    className: "col-span-1 md:col-span-4 text-5xl dark:text-white",
+    className: "col-span-1 md:col-span-4 lg:col-span-2 text-5xl dark:text-white",
   },
   {
     content: (
@@ -88,7 +111,7 @@ export const cardData = [
         <h3 className="text-base sm:text-lg font-semibold">
           Intern Supervisor at UNLAD Foundation
         </h3>
-        <p className="text-sm text-gray-500 dark:text-gray-400">2024</p>
+        <p className="text-sm text-gray-500 dark:text-gray-400">2024-2025</p>
         <p className="text-sm mt-1 leading-7 dark:text-gray-300">
           •Taught interns in foundational frontend development concepts,
           including routing, Tailwind CSS, responsive design, and efficient
@@ -148,7 +171,40 @@ export const cardData = [
     filter: "Experiences",
     className: "col-span-1 md:col-span-4 text-5xl dark:text-white",
   },
-
+  {
+    content: (
+      <div className="flex flex-col justify-between gap-5">
+        <div>
+          <h3 className="text-base sm:text-lg font-semibold mb-2">Junk Shop</h3>
+          <p className="text-xs sm:text-sm text-muted-foreground mb-4 dark:text-gray-400">
+            Built with React Router v7 Framework Mode, Tailwind CSS, Vite
+          </p>{" "}
+        </div>
+        <Link to="https://janku-shop.web.app/" target="_blank">
+          <Button>View Project</Button>
+        </Link>
+      </div>
+    ),
+    filter: "Projects",
+    className: "dark:text-white",
+  },
+  {
+    content: (
+      <div className="flex flex-col justify-between gap-5">
+        <div>
+          <h3 className="text-base sm:text-lg font-semibold mb-2">Trash Tauri Template</h3>
+          <p className="text-xs sm:text-sm text-muted-foreground mb-4 dark:text-gray-400">
+            Built with React Router v7 Framework Mode, Tailwind CSS, Vite, Tauri
+          </p>{" "}
+        </div>
+        <Link to="https://github.com/MarkMalihan/trash-tauri-template" target="_blank">
+          <Button>View Project</Button>
+        </Link>
+      </div>
+    ),
+    filter: "Projects",
+    className: "dark:text-white",
+  },
   {
     content: (
       <div className="flex flex-col justify-between gap-5">

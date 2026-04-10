@@ -1,7 +1,7 @@
 import { DiScrum } from "react-icons/di";
 import { FaCode, FaCss3Alt, FaGitAlt, FaHtml5, FaReact } from "react-icons/fa6";
 import { MdOutlineAppShortcut } from "react-icons/md";
-import { SiVite, SiTypescript, SiTailwindcss, SiFigma } from "react-icons/si";
+import { SiVite, SiTypescript, SiTailwindcss, SiFigma, SiTauri } from "react-icons/si";
 
 export const APP_CONSTANTS = {
   APP_TITLE: "Argel Malihan Portfolio",
@@ -21,6 +21,7 @@ export const SKILLS = [
   { name: "Figma", icon: SiFigma },
   { name: "UI/UX", icon: MdOutlineAppShortcut },
   { name: "Agile Methodology", icon: DiScrum },
+  { name: "Tauri (learning)", icon: SiTauri }
 ];
 
 export const WORK_EXPERIENCES = [];
